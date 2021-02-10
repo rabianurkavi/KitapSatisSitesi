@@ -1,0 +1,15 @@
+﻿#site {
+    background-color: whitesmoke;
+    height: 900px;
+    box-shadow: #000000 0 0 20px;
+    border-radius: 10px 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+body {
+    background-image: url(/image/220px-Sirius_Black_film.jpg)
+    
+}
+
+

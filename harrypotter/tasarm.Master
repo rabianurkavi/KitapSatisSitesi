@@ -1,0 +1,129 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="tasarm.master.cs" Inherits="harrypotter.tasarm" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        header {
+            background-color: mistyrose;
+           
+            
+        }
+        #logo{
+            
+            min-height:50px;
+            background-color:mistyrose;
+        }
+        
+        #sosyal{
+            min-height:50px;
+            background-color:mistyrose;
+        }
+      
+        h4{
+            color:mediumslateblue;
+        }
+        h1{
+            color:darksalmon;
+        }
+        body{
+            background:url(/image/unnamed.jpg)  0 0 no-repeat fixed;
+            background-size:cover;
+        }
+        li{
+            background-color:bisque;
+        }
+        nav{
+            background-color:blanchedalmond;
+            color:blueviolet;
+        }
+        .navbar-toggler{
+            background-color:deeppink;
+        }
+        .navbar navbar-expand-lg navbar-light bg-light{
+            color:antiquewhite;
+        }
+        ul{
+            color:antiquewhite;
+            background-color:moccasin;
+        }
+       h3{
+           color:brown;
+           font-style:italic;
+       }
+        
+    </style>
+    
+   </head>
+  <body  >
+    
+     <form id="form1" runat="server">
+        <section id="site" class="container">
+            <header class="row">
+
+                <div id="logo" class="col-md-2"><img src="image/istockphoto-1194280924-170667a.jpg" width="180" /></div>
+
+                <div id="slogan" class="col-md-7"> <marquee> <h1> 3 al 2 öde kampanyamız vardır  </h1></marquee> </div>
+                <div id="sosyal" class="col-md-3">
+
+                    <a href="http://facebook.com">Facebook</a>
+                    <a href="http://twitter.com">Twitter</a>
+                    <a href="http://instagram.com">İnstagram</a>
+                     <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="anasayfa.aspx">Ana Sayfa <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="üyegirişi.aspx">Üye Girişi</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="üyeol.aspx">Üye Ol</a>
+      </li>
+     
+    </ul>
+  </div>
+</nav>
+
+                </div>
+
+            </header>
+
+            <section class="row">
+                <div id="left" class="col-md-2 text-center">
+                    <a href="Default.aspx"><h4>Gerilim Kitapları</h4></a><br />
+                    <a href="about.aspx"><h4>Macera Kitapları</h4></a><br />
+                    <a href="contact.aspx"><h4>Siparişim Nerede</h4></a><br />
+                    <a href="tablo.aspx"><h4>Tablo Etiketi</h4></a><br />
+                    <a href="benimkosem.aspx"><h4>Hissettiklerini Yaz Köşesi </h4></a>
+                    <a href="iletisim.aspx"><h4>İletişim</h4></a><br />
+                    <a href="nostok.aspx"><h4>(Repeater Nesnesi)Öğrenci Burs Kayıdı </h4></a>
+                </div>
+                <div id="content" class="col-md-10">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"> </asp:ContentPlaceHolder> <br />
+                  
+  
+                </div>
+                
+            </section>
+
+            <footer class="row">
+                <hr />
+               
+                <div id="foot" class="col-md-12 text-center"><strong>Servet ister misin?Git ve kitap oku.</strong></div>
+                 <img src="image/kitappp.jpg" height="-100" width="100" />
+                <hr />
+            </footer>
+        </section>
+    </form>
+      </body>
+    </html>
